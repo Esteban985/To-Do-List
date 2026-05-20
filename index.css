@@ -1,0 +1,47 @@
+body {
+    background: #2A7B9B;
+    background: linear-gradient(25deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+    min-height: 100vh;
+}
+
+.card {
+    background: -webkit-linear-gradient(90deg, #ffffff, #d0e3ff, #eaeaee, #faf2e5);
+    background: linear-gradient(90deg, #ffffff, #d0e3ff, #eaeaee, #faf2e5);
+    border-radius: 25px;
+}
+
+.btn {
+    background-color: #0000FF;
+    color: white;
+}
+
+.btn:hover {
+    background-color: #2020ab;
+    color: white;
+}
+
+#inputTarea {
+    background-color: #E0FFFF;
+}
+
+#tareas {
+    color: #000000;
+    gap: 15px;
+}
+
+sup {
+    color: red;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+sup:hover {
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.text {
+    color: black;
+    font-weight: bold;
+    font-size: 50px;
+}
