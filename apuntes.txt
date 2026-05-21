@@ -1,0 +1,48 @@
+## Mis Apuntes
+
+## Seleccionar elementos
+
+* document.querySelector(".clase o #id o etiqueta"): Selecciona el primer elemento que coincida con el selector CSS.
+
+## Crear y eliminar elementos
+
+* document.createElement("etiqueta"): Crea un nuevo elemento HTML en memoria (ej: "div", "p", "button").
+* elementoPadre.append(nuevoElemento o texto): Inserta contenido o elementos al final de un elemento padre.
+* elemento.remove(): Elimina por completo el elemento seleccionado del documento HTML.
+
+## Manejo de atributos y clases
+
+* elemento.setAttribute("nombreAtributo", "valor"): Crea un nuevo atributo o modifica el valor de uno existente.
+* elemento.className = "clase1 clase2": Asigna o reemplaza todas las clases de un elemento por unas nuevas.
+* elemento.classList.add("clase"): Agrega una o más clases específicas a un elemento sin borrar las que ya tiene.
+* elemento.classList.remove("clase"): Elimina una o más clases específicas de un elemento.
+* elemento.classList.toggle("clase"): Actúa como un interruptor; quita la clase si existe o la agrega si no está.
+
+## Eventos e interacción
+
+* elemento.addEventListener("evento", (event) => { ... }): Escucha una acción del usuario (como "click") y ejecuta instrucciones.
+* event.target: Identifica el elemento exacto del DOM que originó el evento (ideal para mostrarlo con console.log).
+
+------------------------------
+## Apuntes Adicionales
+
+## 1. Modificar el texto de un elemento
+
+* elemento.textContent = "Texto nuevo": Sirve para leer o cambiar el texto limpio dentro de una etiqueta, ignorando el HTML.
+
+## 2. Leer valores de formularios
+
+* input.value: Sirve para obtener o cambiar lo que el usuario ha escrito dentro de un campo de texto (<input>), <textarea> o <select>.
+
+## 3. Seleccionar múltiples elementos a la vez
+
+* document.querySelectorAll(".clase"): A diferencia de querySelector, este selecciona todos los elementos que tengan esa clase y devuelve una lista (NodeList) que puedes recorrer con un .forEach().
+
+## 4. Insertar código HTML directamente
+
+* elemento.innerHTML = "<strong>Texto en negrita</strong>": Permite insertar texto que incluya etiquetas HTML reales. Úsalo con cuidado para evitar problemas de seguridad.
+
+## 5. Navegar entre elementos (Familia del DOM)
+
+* elemento.parentElement: Te permite acceder al elemento padre directo de la etiqueta actual.
+* elemento.children: Te devuelve una lista con todos los elementos hijos directos que tiene esa etiqueta.
