@@ -26,7 +26,7 @@ const getNextid = () => {
 }
 
 const dibujarElementos = (info = null, i = null) => {
-    //ponemos info = null por si al enviar los parametros no llega nada que sea null
+    //Preguntar sobre porque el info null;
     let div = document.createElement("div")
     div.className = "d-flex align-items-center justify-content-between w-50"
 
